@@ -1,0 +1,11 @@
+---
+apiVersion: getambassador.io/v2
+kind: Mapping
+metadata:
+  name: quote-backend2
+  namespace: ambassador
+spec:
+  prefix: /backend/
+  service: quote2
+  headers:
+    x-circle-id: "456"
